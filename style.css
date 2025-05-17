@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #F2D3D0;
+    display: flex;
+}
+
+.navbar-icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.catalogo {
+    background-color: #620F20;
+    padding: 25px 0px 15px 0px;
+    text-align: center;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+.catalogo hr {
+    margin: 20px auto;
+    width: 5%;
+    height: 3px;
+    background-color:  #ffffff;
+    
+}
+
+.catalogo h1 {
+    font-family: Source Serif Variable;
+    text-align: center;
+    background-color: #620F20;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.catalogo-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.catalogo-menu a {
+    font-size: 25px;
+    color: #ffffff;
+    justify-items: center;
+    margin: 0px 15px;
+    text-decoration:none;
+}
+
+.catalogo-contenido{
+    padding: 25px 0;
+    background-color: #F2D3D0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.catalogo-contenido img , p{
+    width: 400px;
+    height: auto;
+    margin: 0 25px;
+}
+
+.catalogo-anuncio{
+    background-color: #620F20;
+    padding: 25px 0px 15px 0px;
+    
+}
+
+.catalogo-anuncio h1{
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.catalogo-anuncio img{
+    
+    width: 400px;
+    height: auto;
+    margin: 0 25px;
+}
+
+.catalogo-anuncio table{
+    display: flex;
+    justify-content: center;
+}
+
