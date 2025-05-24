@@ -4,90 +4,129 @@
     box-sizing: border-box;
 }
 
-.navbar {
-    background-color: #F2D3D0;
+.tittle {
+    background-color: #dccbad;
     display: flex;
-}
-
-.navbar-icon {
-    display: flex;
-    justify-content: end;
     align-items: center;
-    gap: 10px;
-    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+    height: 80px;
 }
 
-.catalogo {
-    background-color: #620F20;
-    padding: 25px 0px 15px 0px;
+.logo-container {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre el logo y el texto */
     text-align: center;
-    gap: 20px; /* Espacio entre los enlaces */
 }
 
-.catalogo hr {
-    margin: 20px auto;
-    width: 5%;
+.logo-container p {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333; /* O el color que prefieras */
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+/* Contenedor de los íconos alineado a la derecha */
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+/* Catálogo de navegación */
+.navbar {
+    background-color: #d38646;
+    padding: 25px 0 15px 0;
+}
+
+/* Menú de navegación */
+.navbar_menu {
+    display: flex;
+    margin: 10px 30px;
+    gap: 40px;
+}
+
+.navbar_menu a {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Línea decorativa debajo de "Nuevo" */
+.navbar_menu hr {
+    margin: 10px auto;
+    width: 100%;
     height: 3px;
-    background-color:  #ffffff;
-    
+    background-color: #ffffff;
 }
 
+/* Título del catálogo */
 .catalogo h1 {
-    font-family: Source Serif Variable;
+    font-family: 'Times New Roman', Times, serif; 
     text-align: center;
     background-color: #620F20;
     color: #ffffff;
     font-size: 40px;
     margin-bottom: 25px;
 }
-.catalogo-menu {
+
+.content_personalizacion {
+    background-color: #d4b79b;
     display: flex;
     justify-content: center;
 }
 
-.catalogo-menu a {
-    font-size: 25px;
-    color: #ffffff;
-    justify-items: center;
-    margin: 0px 15px;
-    text-decoration:none;
+.content_personalizacion table {
+    margin: 25px;
+    border-collapse: separate;
+    border-spacing: 30px 20px; 
 }
 
-.catalogo-contenido{
-    padding: 25px 0;
-    background-color: #F2D3D0;
-    display: flex;
-    justify-content: center;
-}
-
-
-.catalogo-contenido img , p{
-    width: 400px;
-    height: auto;
-    margin: 0 25px;
-}
-
-.catalogo-anuncio{
-    background-color: #620F20;
-    padding: 25px 0px 15px 0px;
-    
-}
-
-.catalogo-anuncio h1{
+.content_personalizacion td {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
-    font-size: 50px;
-    color: #ffffff;
+    vertical-align: middle;
+    padding: 10px;
 }
 
-.catalogo-anuncio img{
-    
-    width: 400px;
-    height: auto;
-    margin: 0 25px;
-}
-
-.catalogo-anuncio table{
+footer {
+    background-color: #dccbad;
     display: flex;
     justify-content: center;
+    padding: 20px 0;
 }
+
+.content_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo horizontalmente */
+    gap: 10px;
+}
+
+.content_footer .footer_icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre íconos */
+}
+
+.content_footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
