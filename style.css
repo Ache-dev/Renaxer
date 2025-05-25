@@ -234,9 +234,10 @@ footer {
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 8px; 
     overflow: hidden;
     height: 35px;
+    border: 2px solid #d38646;
 }
 
 .barra-busqueda input {
@@ -248,10 +249,12 @@ footer {
     color: #6b4636;
     font-family: 'Times New Roman', serif;
     width: 160px;
+    background-color: white;
+    border-radius: 0; 
 }
 
 .barra-busqueda input::placeholder {
-    color: #ccc;
+    color: #a1846c;
 }
 
 .barra-busqueda button {
@@ -263,6 +266,124 @@ footer {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
+
+.barra-busqueda button img {
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar_menu {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .barra-busqueda {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content_personalizacion table {
+        border-spacing: 20px 15px;
+    }
+
+    .content_personalizacion td {
+        width: 160px;
+        height: 160px;
+        padding: 5px;
+    }
+
+    .content_personalizacion td img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tittle {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-container {
+        position: static;
+        transform: none;
+        justify-content: center;
+    }
+
+    .icons {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        gap: 15px;
+    }
+
+    .barra-busqueda {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .barra-busqueda input {
+        width: 60%;
+    }
+
+    .content_personalizacion table {
+        display: block;
+        width: 100%;
+    }
+
+    .content_personalizacion tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content_personalizacion td {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container p {
+        font-size: 35px;
+    }
+
+    .navbar_menu a {
+        font-size: 18px;
+    }
+
+    .content_personalizacion td {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .icono-video {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer_icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .content_footer p {
+        font-size: 14px;
+    }
+}
+
