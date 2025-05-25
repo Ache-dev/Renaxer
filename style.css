@@ -27,7 +27,7 @@
 .logo-container p {
     font-size: 60px;
     font-weight: bold;
-    color: #333; /* O el color que prefieras */
+    color: #6b4636; /* O el color que prefieras */
     font-family: 'Times New Roman', Times, serif; 
 }
 
@@ -44,7 +44,10 @@
 /* Catálogo de navegación */
 .navbar {
     background-color: #d38646;
-    padding: 25px 0 15px 0;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Menú de navegación */
@@ -56,7 +59,7 @@
 
 .navbar_menu a {
     font-size: 25px;
-    color: #ffffff;
+    color: #6b4636;
     text-decoration: none;
 }
 
@@ -65,7 +68,7 @@
     margin: 10px auto;
     width: 100%;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #6b4636;
 }
 
 /* Título del catálogo */
@@ -91,14 +94,22 @@
 }
 
 .content_personalizacion td {
-    width: 300px;
+    width: 200px;
     height: 200px;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: none;
     text-align: center;
     vertical-align: middle;
     padding: 10px;
+}
+
+.content_personalizacion td img {
+    margin-bottom: 10px;
+}
+
+.content_personalizacion p {
+    color:#6b4636;
 }
 
 footer {
@@ -124,9 +135,134 @@ footer {
 .content_footer p {
     margin: 0;
     font-size: 16px;
-    color: #333;
+    color: #6b4636;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
+.estampado-con-icono {
+    position: relative;
+    display: inline-block;
+}
 
+.estampado-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.icono-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.foil-stamping-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.foil-stamping-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.bordado-a-maquina-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.bordado-a-maquina-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.bordado-en-lentejuelas-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.bordado-en-lentejuelas-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.bordados-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.bordados-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.vinilo-textil-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.vinilo-textil-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.impresion-digital-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.impresion-digital-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.serigrafia-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.serigrafia-con-icono img {
+    display: block;
+    border-radius: 10px;
+}
+
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 35px;
+}
+
+.barra-busqueda input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 14px;
+    color: #6b4636;
+    font-family: 'Times New Roman', serif;
+    width: 160px;
+}
+
+.barra-busqueda input::placeholder {
+    color: #ccc;
+}
+
+.barra-busqueda button {
+    background-color: #d38646;
+    border: none;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
