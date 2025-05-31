@@ -161,6 +161,7 @@
     display: flex;
     gap: 20px;
     transition: transform 0.4s;
+    height: auto;
 }
 
 .catalogo-items.slide-left {
@@ -185,7 +186,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 10px 10px 0 10px;
-    width: 160px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,126 +266,8 @@ footer {
     margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-    }
 
-    .navbar_menu {
-        margin: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .barra-busqueda {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .content_personalizacion {
-        flex-direction: column;
-        gap: 30px;
-        padding: 40px 20px;
-    }
-
-    .content_personalizacion h1 {
-        text-align: center;
-        max-width: 100%;
-        font-size: 2.8rem;
-    }
-
-    .content_personalizacion img {
-        max-width: 250px;
-    }
-
-    .catalogo-items {
-        gap: 15px;
-    }
-
-    .catalogo-item {
-        width: 140px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .tittle {
-        flex-direction: column;
-        height: auto;
-        padding: 15px;
-    }
-
-    .logo-container {
-        position: static;
-        transform: none;
-        justify-content: center;
-    }
-
-    .logo-container p {
-        font-size: 45px;
-    }
-
-    .icons {
-        position: static;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .navbar {
-        padding: 15px;
-    }
-
-    .navbar_menu {
-        gap: 15px;
-    }
-
-    .navbar_menu a {
-        font-size: 20px;
-    }
-
-    .barra-busqueda {
-        max-width: 300px;
-    }
-
-    .content_personalizacion h1 {
-        font-size: 2.2rem;
-    }
-
-    .content_personalizacion img {
-        max-width: 200px;
-    }
-
-    .catalogo h1 {
-        font-size: 2rem;
-    }
-
-    .catalogo-slider {
-        gap: 15px;
-    }
-
-    .catalogo-arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 1.2rem;
-    }
-
-    .catalogo-item {
-        width: 120px;
-    }
-
-    .catalogo-item p {
-        font-size: 0.9rem;
-    }
-
-    .catalogo-item .precio {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .logo-container p {
         font-size: 35px;
     }
@@ -468,7 +351,7 @@ footer {
     }
 
     .content_footer p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 

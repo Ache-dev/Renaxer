@@ -208,6 +208,36 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .logo-container p {
+        font-size: 35px;
+    }
+
+    .navbar_menu {
+        gap: 12px;
+    }
+
+    .navbar_menu a {
+        font-size: 16px;
+    }
+
+    .barra-busqueda {
+        max-width: 250px;
+        height: 32px;
+    }
+
+    .barra-busqueda input {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .barra-busqueda button {
+        width: 32px;
+    }
+
+    .barra-busqueda button img {
+        width: 16px;
+        height: 16px;
+    }
     .content_personalizacion table {
         display: block;
         width: 100%;
