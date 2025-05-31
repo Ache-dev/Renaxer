@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dccbad;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.tittle {
+    background-color: #dccbad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+}
+
+.logo-container {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre el logo y el texto */
+    text-align: center;
+}
+
+.logo-container p {
+    font-size: 60px;
+    font-weight: bold;
+    color: #6b4636; /* O el color que prefieras */
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+/* Contenedor de los íconos alineado a la derecha */
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+/* Catálogo de navegación */
+.navbar {
+    background-color: #d38646;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Menú de navegación */
+.navbar_menu {
+    display: flex;
+    margin: 10px 30px;
+    gap: 40px;
+}
+
+.navbar_menu a {
+    font-size: 25px;
+    color: #6b4636;
+    text-decoration: none;
+}
+
+/* Línea decorativa debajo de "Nuevo" */
+.navbar_menu hr {
+    margin: 10px auto;
+    width: 100%;
+    height: 3px;
+    background-color: #6b4636;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px; 
+    overflow: hidden;
+    height: 35px;
+    border: 2px solid #d38646;
+    min-width: 200px;
+}
+
+.barra-busqueda input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 14px;
+    color: #6b4636;
+    font-family: 'Times New Roman', serif;
+    flex: 1;
+    background-color: white;
+    border-radius: 0; 
+}
+
+.barra-busqueda input::placeholder {
+    color: #a1846c;
+}
+
+.barra-busqueda button {
+    background-color: #d38646;
+    border: none;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barra-busqueda button:hover {
+    background-color: #b8733a;
+}
+
+.barra-busqueda button img {
+    width: 18px;
+    height: 18px;
+}
+
+/* --- TABLE PERSONALIZACION --- */
+.content_personalizacion table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 30px 0;
+    margin: 30px 0 40px 0;
+    background: transparent;
+    display: table;
+}
+
+.content_personalizacion tr {
+    display: table-row;
+}
+
+.content_personalizacion td {
+    width: 25%;
+    vertical-align: top;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #dccbad;
+    padding: 25px 0 10px 0;
+    text-align: center;
+    color: #6b4636;
+    border-top: 2px solid #c2b093;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.footer_icons img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(0%);
+    transition: filter 0.2s;
+}
+
+.footer_icons img:hover {
+    filter: grayscale(60%);
+}
+
+.content_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.content_footer p {
+    margin: 0;
+    font-size: 15px;
+    color: #6b4636;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
+/* --- RESPONSIVE TABLE --- */
+@media screen and (max-width: 900px) {
+    .content_personalizacion td {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .content_personalizacion table {
+        border-spacing: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content_personalizacion table {
+        display: block;
+        width: 100%;
+        border-spacing: 0;
+    }
+    .content_personalizacion tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content_personalizacion td {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .footer_icons img {
+        width: 22px;
+        height: 22px;
+    }
+    .content_footer p {
+        font-size: 13px;
+    }
+}
+
+.estampado-con-icono,
+.foil-stamping-con-icono,
+.bordado-a-maquina-con-icono,
+.bordado-en-lentejuelas-con-icono,
+.bordados-con-icono,
+.vinilo-textil-con-icono,
+.impresion-digital-con-icono,
+.serigrafia-con-icono {
+    position: relative;
+    display: inline-block;
+}
+
+.icono-video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px; /* Ajusta el tamaño según tu diseño */
+    height: 48px;
+    pointer-events: none;
+    z-index: 2;
+}
+

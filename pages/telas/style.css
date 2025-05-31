@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tittle {
+    background-color: #dccbad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+}
+
+.logo-container {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre el logo y el texto */
+    text-align: center;
+}
+
+.logo-container p {
+    font-size: 60px;
+    font-weight: bold;
+    color: #6b4636; /* O el color que prefieras */
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+/* Contenedor de los íconos alineado a la derecha */
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+/* Catálogo de navegación */
+.navbar {
+    background-color: #d38646;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Menú de navegación */
+.navbar_menu {
+    display: flex;
+    margin: 10px 30px;
+    gap: 40px;
+}
+
+.navbar_menu a {
+    font-size: 25px;
+    color: #6b4636;
+    text-decoration: none;
+}
+
+/* Línea decorativa debajo de "Nuevo" */
+.navbar_menu hr {
+    margin: 10px auto;
+    width: 100%;
+    height: 3px;
+    background-color: #6b4636;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px; 
+    overflow: hidden;
+    height: 35px;
+    border: 2px solid #d38646;
+    min-width: 200px;
+}
+
+.barra-busqueda input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 14px;
+    color: #6b4636;
+    font-family: 'Times New Roman', serif;
+    flex: 1;
+    background-color: white;
+    border-radius: 0; 
+}
+
+.barra-busqueda input::placeholder {
+    color: #a1846c;
+}
+
+.barra-busqueda button {
+    background-color: #d38646;
+    border: none;
+    height: 100%;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barra-busqueda button:hover {
+    background-color: #b8733a;
+}
+
+.barra-busqueda button img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Telas Section */
+.telas-section {
+    background-color: #dccbad;
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+.telas-section h1 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.telas-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.telas-arrow {
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #d38646;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.telas-arrow:hover {
+    background: #e7b07a;
+}
+
+.telas-items {
+    display: flex;
+    gap: 0;
+    transition: transform 0.4s;
+    width: 900px;
+    justify-content: center;
+}
+
+.tela-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 0 5px;
+}
+
+.tela-item img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tela-item p {
+    color: #6b4636;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.telas-items.slide-left {
+    animation: slideLeft 0.4s;
+}
+
+.telas-items.slide-right {
+    animation: slideRight 0.4s;
+}
+
+@keyframes slideLeft {
+    0% { transform: translateX(40px); opacity: 0.7; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+    0% { transform: translateX(-40px); opacity: 0.7; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Footer */
+footer {
+    background-color: #dccbad;
+    padding: 25px 0 10px 0;
+    text-align: center;
+    color: #6b4636;
+    border-top: 2px solid #c2b093;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.footer_icons img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(0%);
+    transition: filter 0.2s;
+}
+
+.footer_icons img:hover {
+    filter: grayscale(60%);
+}
+
+.content_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.content_footer p {
+    margin: 0;
+    font-size: 15px;
+    color: #6b4636;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .telas-items {
+        width: 700px;
+    }
+    .tela-item, .tela-item img {
+        width: 150px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .telas-items {
+        width: 98vw;
+        max-width: 98vw;
+    }
+    .tela-item, .tela-item img {
+        width: 120px;
+        height: 120px;
+    }
+    .telas-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1.3rem;
+    }
+    .footer_icons img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .telas-section h1 {
+        font-size: 2rem;
+    }
+    .telas-items {
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .tela-item, .tela-item img {
+        width: 90px;
+        height: 90px;
+    }
+    .telas-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
+    .navbar_menu {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    .footer_icons img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
