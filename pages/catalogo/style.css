@@ -419,6 +419,10 @@ footer {
         font-size: 35px;
     }
 
+    .logo-container p {
+        font-size: 35px;
+    }
+
     .navbar_menu {
         gap: 12px;
     }
@@ -427,9 +431,24 @@ footer {
         font-size: 16px;
     }
 
+    .icons {
+        gap: 10px;
+        right: 10px;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+
     .barra-busqueda {
         max-width: 250px;
         height: 32px;
+    }
+
+    .barra-busqueda input {
+        font-size: 12px;
+        padding: 0 8px;
     }
 
     .barra-busqueda input {
